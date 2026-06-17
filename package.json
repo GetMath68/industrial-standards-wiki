@@ -1,0 +1,41 @@
+{
+  "name": "industrial-standards-wiki",
+  "version": "0.1.0",
+  "description": "Industrial standards knowledge management system",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "ingest": "tsx scripts/ingest.ts",
+    "query": "tsx scripts/query.ts",
+    "relations": "tsx scripts/relations.ts",
+    "compare": "tsx scripts/compare.ts",
+    "check-integrity": "tsx scripts/check-integrity.ts",
+    "trace": "tsx scripts/trace.ts",
+    "test": "vitest"
+  },
+  "keywords": [
+    "wiki",
+    "standards",
+    "industrial",
+    "knowledge-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.11",
+    "ora": "^7.0.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.10",
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
